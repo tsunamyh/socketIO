@@ -1,7 +1,7 @@
 // const { io } = require('socket.io-client')
 // import { io } from "socket.io-client";
 
-socket = io('http://localhost:3000')
+socket = io('http://localhost:3008')
 
 socket.on('disconnect', function () {
     setTiltle('Disconnected from server')

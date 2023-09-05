@@ -1,0 +1,1 @@
+This socket.IO works with mqlsocket.mq5
