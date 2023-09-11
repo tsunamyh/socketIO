@@ -18,7 +18,7 @@ socket.on('message', function (message) {
 document.forms[0].onsubmit = function () {
     var input = document.getElementById("message");
     printMessage(input.value)
-    socket.emit('chat', input.value)
+    socket.emit('message', input.value)
     input.value = "";
 }
 
