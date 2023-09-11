@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 io.on('connection', (socket) => {
     console.log("A user connected");
-    socket.send("socket.send()!!!!!!!!!!!!!!!")
+    socket.send("socket.send()!!!!!!!!!!!!!!!") //socket.emit('message',...
     socket.on('message', (msg) => {
         console.log("message chat triggred");
         socket.broadcast.emit('message', msg);
